@@ -1,0 +1,57 @@
+$uicss.cd-top {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	z-index: 9;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	color: $firstcolor$;
+	color: $btn_icon$;
+	border-radius: 50%;
+	font-size: 26px;
+	text-align: center;
+	line-height: 32px;
+	border-color:$firstcolor$;
+	border-color:$btn_border$;
+	border-width: 2px;
+	border-style: solid;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	white-space: nowrap;
+	background-color:$bodybgcolor$;
+	background-color:$btn_bg$;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+$uicss.cd-top.cd-is-visible, $uicss.cd-top.cd-fade-out, .no-touch .cd-top:hover {
+	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	-moz-transition: opacity .3s 0s, visibility 0s 0s;
+	-o-transition: opacity .3s 0s, visibility 0s 0s;
+	-ms-transition: opacity .3s 0s, visibility 0s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s;
+}
+$uicss.cd-top.cd-is-visible {
+	visibility: visible;
+	opacity: 0.5;
+}
+$uicss.cd-top.cd-fade-out {
+	opacity: .5;
+}
+$uicss.cd-top:hover {
+	background-color: $thirdcolor$;
+	background-color: $btn_bg_hover$;
+	opacity: 1;
+	color: $secondcolor$;
+	color: $btn_icon_hover$;
+	border-color: $secondcolor$;
+	border-color: $btn_border_hover$;
+}

@@ -1,0 +1,402 @@
+/* 轮播图 */
+$uicss {
+	width: 100%;
+	height: auto;
+	display: table;
+}
+$uicss_box .container $uicss{
+	border-radius: 0px 0px 5px 5px;
+}
+$uicss.slick-slider {
+	display: block;
+}
+
+$uicss .slick-list,
+$uicss .slick-track {
+	height: 100%;
+}
+
+$uicss .slick-slide {
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+$uicss .slick-slide a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+$uicss_box .container $uicss .slick-slide img {
+	border-radius: 0px 0px 5px 5px;
+}
+$uicss .slick-slide img{display: none;}
+$uicss .slick-slide:nth-child(1) img{ display: block!important;height: auto; }
+$uicss .slick-slide img[data-lazy] {
+	max-height: 150px;
+}
+
+$uicss .animation-fade {
+	-webkit-animation-duration: .66s !important;
+	-o-animation-duration: .66s !important;
+	animation-duration: .66s !important;
+}
+
+@media (max-width:767px) {
+	$uicss .slick-dots {
+		bottom: 5px;
+	}
+	$uicss .slick-dots li {
+		width: 15px;
+		height: 15px;
+		margin: 0;
+	}
+}
+
+$uicss .slick-arrow {
+	width: 36px;
+	height: 72px;
+	top: 50%;
+	text-align: center;
+	display: none !important;
+	z-index: 1;
+	margin-top: -36px;
+	position: absolute;
+}
+
+$uicss .slick-arrow:before {
+	display: none;
+}
+
+$uicss:hover .slick-arrow {
+	display: block;
+}
+
+$uicss .slick-arrow.slick-prev {
+	background: $thirdcolor$;
+	background: $hovercolor$;
+	opacity: 1 !important;
+	left: 20px;
+	border-radius: 5px;
+}
+$uicss .slick-arrow.slick-next {
+	background: $thirdcolor$;
+	background: $hovercolor$;
+	opacity: 1 ;
+	right: 20px;
+	height: 72px;
+	width: 36px;
+	border-radius: 5px;
+}
+
+$uicss .slick-arrow:hover {
+	opacity: .9;
+	-webkit-transition: all .66s cubic-bezier(.17, .84, .44, 1);
+	transition: all .66s cubic-bezier(.17, .84, .44, 1);
+}
+
+$uicss .slick-arrow i {
+	color: #fff !important;
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	transform: translate(0,0);
+    text-rendering: auto;
+    speak: none;
+    font-weight: 36px;
+    font-size: 36px;
+    margin-top:18px;
+}
+
+@media (max-width:767px) {
+	$uicss .slick-arrow i {
+		font-size: 50px
+	}
+}
+
+$uicss .slick-dots {
+	margin: 0;
+	bottom: 20px
+}
+
+$uicss .slick-dots li {
+	margin: 0 2px
+}
+
+@media (max-width:991px) {}
+
+@media (min-width:768px) {
+	$uicss:hover .slick-arrow {
+		display: block !important
+	}
+}
+
+@media (max-width:767px) {
+	$uicss .slick-dots {
+		bottom: 5px
+	}
+}
+
+$uicss .banner-text {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+$uicss .banner-text .container {
+	height: 100%;
+	display: table;
+	text-align: center;
+}
+
+$uicss .banner-text .container .banner-text-con {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+$uicss .banner-text.p-0 .container {
+	text-align: left;
+}
+
+$uicss .banner-text.p-0 .container .banner-text-con div {
+	width: 60%;
+	float: left;
+}
+
+$uicss .banner-text.p-1 .container {
+	text-align: right;
+}
+
+$uicss .banner-text.p-1 .container .banner-text-con div {
+	width: 60%;
+	float: right;
+}
+
+$uicss .banner-text.p-2 {
+	top: 10%;
+}
+
+$uicss .banner-text.p-2 .container .banner-text-con {
+	vertical-align: top;
+}
+
+$uicss .banner-text.p-3 {
+	top: auto;
+	bottom: 10%;
+}
+
+$uicss .banner-text.p-3 .container .banner-text-con {
+	vertical-align: bottom;
+}
+
+$uicss .banner-text.p-2 .container .banner-text-con div,
+$uicss .banner-text.p-3 .container .banner-text-con div,
+$uicss .banner-text.p-4 .container .banner-text-con div {
+	width: 60%;
+	display: inline-block;
+}
+
+$uicss .banner-text h3,
+$uicss .banner-text p {
+	color: #fff;
+}
+
+$uicss .banner-text h3 {
+	margin: 0;
+	font-size: 36px;
+	font-weight: 500;
+}
+
+$uicss .banner-text p {
+	font-size: 24px;
+	margin: 20px 0 0;
+	text-shadow: none;
+}
+
+$uicss .banner-text .btn {
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+$uicss .slick-dots li {
+  width: 10px;
+  height: 10px;
+  background: $pagercolor$;
+  opacity: .95;
+  border-radius: 100%;
+  transition: all 200ms ease-out;
+  margin: 0 5px;
+}
+$uicss .slick-dots li button {
+  display: none;
+}
+$uicss .slick-dots li button:before {
+  display: none;
+}
+$uicss .slick-dots .slick-active {
+  background: $thirdcolor$;
+  background: $hovercolor$;
+  background: $cpagercolor$;
+  opacity: 1;
+  transition: all 200ms ease-out;
+  border-radius: 10px;
+  height: 10px;
+}
+$uicss .slick-dotted.slick-slider
+{
+    margin-bottom: 5px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+
+@media (max-width:991px) {
+	$uicss .banner-text h3 {
+		font-size: 30px;
+	}
+	$uicss .banner-text p {
+		font-size: 20px;
+	}
+}
+
+@media (max-width:767px) {
+	$uicss .banner-text .container {
+		width: 100%;
+	}
+	$uicss .banner-text.p-4 .container .banner-text-con {
+		width: 100%;
+	}
+	$uicss .banner-text h3 {
+		font-size: 24px;
+	}
+	$uicss .banner-text p {
+		margin-top: 15px;
+		font-size: 18px;
+	}
+	$uicss .banner-text .btn {
+		margin-top: 20px;
+		font-size: 16px;
+	}
+}
+@media (max-width: 480px) {
+  $uicss_box .row{margin:0;}
+}
+@media (max-width:479px) {
+	$uicss .banner-text h3 {
+		font-size: 20px;
+	}
+	$uicss .banner-text p {
+		margin-top: 10px;
+		font-size: 16px;
+	}
+}
+/* 内页轮播 */
+$uicss-ny {
+	background-color: $bodybgcolor$;
+	background-color: $ny_bgcolor$;
+	height: 120px;
+	border-radius: 0px 0px 5px 5px;
+}
+
+$uicss-ny h1,$uicss-ny h2 {
+	margin: 0px;
+	padding: 10px 30px;
+	font-size: 35px;
+	text-shadow: none;
+	color: $firstcolor$;
+	color: $ny_titlecolor$;
+}

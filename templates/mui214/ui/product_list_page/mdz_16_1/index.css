@@ -1,0 +1,58 @@
+/*产品模块*/
+$uicss { background: $bodybgcolor$; background: $bgcolor$; padding-bottom:30px;}
+$uicss .item { height: auto; position: relative; min-height: 500px }
+$uicss .item .left { width: 50%; position: relative; padding: 100px }
+$uicss .item .left .content { width: 100% }
+$uicss .item .left .content .title { height: auto; color: $firstcolor$; color: $titlecolor$; font-size: 24px; position: relative; margin: 0; font-weight: normal;white-space: nowrap;overflow:hidden;text-overflow:ellipsis; }
+$uicss .item .left .content .keywords { color: $secondcolor$; color: $desccolor$; display: block; line-height: 1; font-size: 18px; margin-top: 20px }
+$uicss .item .left .content .line { display: block; height: 1px; width: 100px; background-color: $thirdcolor$; background-color: $hovercolor$; margin-top: 20px }
+$uicss .item .left .content .desc { margin-top: 20px; font-size: 16px; color: $secondcolor$; color: $desccolor$; line-height: 1.9; margin-right: 20% }
+$uicss .item .left .more { margin-top: 20px }
+$uicss .item .right { position: absolute; left: 50%; right: 0px; top: 0px; height: 100%; background-position: center; background-size: cover; background-repeat: no-repeat; min-height: 500px }
+$uicss .item:nth-child(2n) .left { position: absolute; left: 50%; right: 0px; top: 0px }
+$uicss .item:nth-child(2n) .left .content { width: 600px; float: left }
+$uicss .item:nth-child(2n) .right { width: 50%; height: 100%; position: static }
+$uicss .more { border: 1px solid; border-color: $secondcolor$; border-color: $solidcolor$; color: $secondcolor$; color: $btncolor$; overflow: hidden; display: inline-block; height: 40px; line-height: 40px; text-align: center; -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 200ms; -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 200ms; -ms-transition: all 0.6s cubic-beziercubic-bezier(0.77, 0, 0.175, 1) 200ms; -o-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 200ms; transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 200ms; width: 160px; cursor: pointer; margin-top: 20px; transition-duration: 1s; }
+$uicss .more span { display: block; width: 100%; position: relative; text-align: center; height: 40px; line-height: 40px; -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 100ms; -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 100ms; -ms-transition: all 0.6s cubic-beziercubic-bezier(0.77, 0, 0.175, 1) 100ms; -o-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 100ms; transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 100ms; color: $secondcolor$; color: $btncolor$; }
+$uicss .more span:after { content: attr(data-title); position: absolute; height: 40px; top: 0px; left: 0px; right: 0; color: transparent; transform: translate(0, 100%); -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 200ms; -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 200ms; -ms-transition: all 0.6s cubic-beziercubic-bezier(0.77, 0, 0.175, 1) 200ms; -o-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 200ms; transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 200ms; }
+$uicss .more:hover { border-color: $thirdcolor$; border-color: $hovercolor$; background-color: $thirdcolor$; background-color: $hovercolor$;color: $hoverbtncolor$; }
+$uicss .more:hover span { transform: translate(0, -100%); }
+$uicss .more:hover span:after { background-color: $thirdcolor$; background-color: $hovercolor$; color: #fff; }
+
+/* 分页 */
+.met_pager { margin-top: 20px; text-align: center; }
+.met_pager * { display: inline-block; }
+.met_pager a { padding: 6px 20px; border: 1px solid #e4eaec; border-right: none; background: #fff; text-align: center; color: #76838f; }
+.met_pager a:hover { background: #f5f5f5; text-decoration: none; }
+.met_pager a.NextA { border-right: 1px solid #e4eaec; }
+.met_pager .PreSpan, .met_pager .NextSpan { padding: 6px 20px; border: 1px solid #e4eaec; background: #fff; color: #ccd5db; cursor: default; }
+.met_pager .firstPage, .met_pager .lastPage { min-width: 40px; height: 28px; line-height: 28px; }
+.met_pager a.Ahover { border-color: $thirdcolor$; background: $thirdcolor$; border-color: $hovercolor$; background: $hovercolor$; color: #fff; cursor: default; }
+.met_pager a.Ahover:hover { border-color: $thirdcolor$; background: $thirdcolor$; border-color: $hovercolor$; background: $hovercolor$; color: #fff; }
+.met_pager a { text-decoration: none; }
+.met_pager a:active, .met_pager a:focus, .met_pager a:hover { text-decoration: none; }
+.met_pager .PageText { display: none; margin-left: 10px; color: #aaa; }
+.met_pager input { display: none; }
+.met_pager .firstPage, .met_pager .lastPage { height: auto; line-height: inherit; }
+.pager li { width: 49%; display: inline-block; }
+.pager li a { max-width: 100%; }
+$uicss #met-pager-btn { border-color: $thirdcolor$; background-color: $thirdcolor$; border-color: $hovercolor$; background-color: $hovercolor$; }
+@media (max-width:991px) {
+	$uicss .item { width: 100%; padding: 70px; min-height: auto }
+	$uicss .item .right { left: 0; height: 300px; min-height: 300px }
+	$uicss .item .left { width: 100%; padding: 0px; margin-top: 300px }
+	$uicss .item .left .content .title { padding-bottom: 10px }
+	$uicss .item .left .content .line { margin-top: 10px }
+	$uicss .item .left .content .keywords { font-size: 14px; margin-top: 10px }
+	$uicss .item .left .content .desc { margin-top: 10px; margin-right: 0; font-size: 12px }
+	$uicss .item:nth-child(2n) .right { width: 100%; height: 300px; position: absolute }
+	$uicss .item:nth-child(2n) .left { position: static }
+	$uicss-list { margin: 0; }
+	$uicss-list .item-list { padding: 0 !important; }
+	$uicss-list .item-list .left { width: 100%; float: none; }
+	$uicss-list .item-list .right { width: 100%; float: none; }
+	$uicss .less-page-content { padding: 15px; }
+}
+@media (max-width:767px) {
+	$uicss .item { width: 100%; padding: 15px; min-height: auto }
+}

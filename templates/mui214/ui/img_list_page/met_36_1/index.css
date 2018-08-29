@@ -1,0 +1,340 @@
+$uicss.met-index-body{
+  padding:$full_padding$px 0px;
+  background-color: $bodybgcolor$;
+  background-color: $background_color$;
+  background-image:url('$background_img$');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/*手机*/
+@media (max-width: 767px){
+    $uicss.met-index-body{padding: $padding_mobile$px 0px;}
+}
+/*平板*/
+@media (max-width: 991px){
+    $uicss.met-index-body{padding: $padding_ipad$px 0px;}
+}
+
+$uicss img.align-left {
+  margin: 0 20px 20px 0;
+}
+$uicss img.align-right {
+  margin: 0 0 20px 20px;
+}
+$uicss p {
+  margin: 0 0 20px 0;
+}
+$uicss b,
+$uicss strong,
+$uicss .bold {
+  font-weight: 600;
+}
+$uicss a {
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  color: #222;
+}
+$uicss a:hover,
+$uicss a:focus {
+  text-decoration: none;
+  outline: none;
+  color: rgba(34,34,34,0.7);
+}
+$uicss .jarallax{
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+$uicss.met-index-body::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+$uicss .filters-wrap {
+  margin: 0;
+  text-align: center;
+}
+
+$uicss .filters-wrap a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 1em;
+  letter-spacing: 2px;
+  transition: all 0.4s ease-in-out;
+  position:relative;
+}
+$uicss .filters-wrap a::before {
+  color: rgba(0, 0, 0, 0);
+  content: ".";
+  font-size: 10px;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  text-shadow: 0 0 rgba(0, 0, 0, 0);
+  top: 100%;
+  transition: text-shadow 0.3s ease 0s, color 0.3s ease 0s;
+}
+$uicss .filters-wrap a:hover::before,.filters-wrap a.active::before,.filters-wrap a:focus::before {
+  color: #222222;
+  text-shadow: 7px 0 #222222, 14px 0 #222222;
+}
+$uicss .text-center {
+  text-align: center;
+}
+$uicss .filters-wrap + .portfolio-masonry-wrapper {
+  margin-top: 40px;
+}
+$uicss .equal-grid.portfolio-masonry-wrapper {
+  margin-left: -30px !important;
+  margin-right: -30px !important;
+}
+$uicss .portfolio-masonry-wrapper .portfolio-item-wrap {
+  padding: 10px;
+}
+
+$uicss .portfolio-item-wrap,
+$uicss .portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+$uicss .portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+$uicss .portfolio-img img {
+    transition: all 0.7s ease 0s;
+    transform: scale(1);
+    width: 100%;
+    height: auto;
+}
+
+$uicss .portfolio-img figcaption{
+    background-color: transparent;
+    position: absolute;
+    z-index: 996;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    transform: scale(1);
+}
+
+$uicss .portfolio-img figcaption a p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $img_hover_color$;
+    font-size: $img_hover_color_size$px;
+    transform: translatex(-8px);
+    text-align: center;
+    line-height: 64px;
+}
+
+$uicss .portfolio-img figcaption a p:hover{
+    color: $img_bg_font_color$;
+    transition: all 0.7s ease 0s;
+    transform: scale(1);
+}
+
+$uicss .portfolio-img figure:hover figcaption{
+    visibility: visible;
+    color: #fff;
+    background-color: $thirdcolor$;
+    background-color: $img_hover_backage_color$;
+    overflow: hidden;
+    opacity: $img_hover_opacity$;
+    height: 64px;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    transform: scale(1);
+}
+
+$uicss .equal-grid .portfolio-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 80%;
+}
+$uicss .equal-grid .portfolio-img.large {
+  padding-top: 160%;
+}
+$uicss .portfolio-content-wrap,
+$uicss .portfolio-title,
+$uicss .portfolio-categories {
+  transition: all 0.4s ease-in-out;
+  white-space: nowrap;
+  webkit-font-smoothing: antialiased;
+  -khtml-font-smoothing: antialiased;
+  -apple-font-smoothing: antialiased;
+}
+
+$uicss .portfolio-item:hover img{
+  transform:scale(1.1);
+}
+$uicss .portfolio-content-wrap {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+$uicss .portfolio-content-wrap::after {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  width: 0;
+  vertical-align: middle;
+  font-size: 0;
+}
+$uicss .potfolio-content {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+$uicss .portfolio-categories,
+$uicss .portfolio-title {
+  opacity: 0;
+}
+$uicss .portfolio-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $firstcolor$;
+  color: $img_title_color$;
+  transform: translatex(-8px);
+  margin:0;
+}
+$uicss .portfolio-title a{
+  color: $firstcolor$;
+  color: $img_title_color$;
+}
+$uicss .portfolio-item:hover .portfolio-categories,
+$uicss .portfolio-item:hover .portfolio-title {
+  opacity: 1;
+  transform: translatex(0);
+}
+
+$uicss .portfolio-categories {
+  transform: translatex(8px);
+  font-size: $img_btn_size$px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+/*分页*/
+$uicss .met_pager { 
+  margin-top: 20px;
+  margin-bottom: 50px; 
+  text-align: center;    
+  position: relative;
+  left: 0;
+  top: 0; 
+  }
+$uicss .met_pager * { 
+  display: inline-block; 
+}
+/*上一页 下一页*/
+$uicss .met_pager a { 
+  padding: 9px 15px;
+  border: 1px solid #e4eaec; 
+  border-right: none; 
+  background: #fff; 
+  text-align: center; 
+  color: #76838f; 
+ }
+$uicss .met_pager a:hover { 
+  background: #f5f5f5; 
+  text-decoration: none; 
+}
+$uicss .met_pager a.NextA { 
+  border-right: 1px solid #e4eaec; 
+}
+$uicss .met_pager .PreSpan,
+$uicss .met_pager .NextSpan { 
+  padding: 9px 15px; 
+  border: 1px solid #e4eaec; 
+  background: #fff; 
+  color: #ccd5db; 
+  cursor: default; 
+}
+$uicss .met_pager .firstPage,
+$uicss .met_pager .lastPage { 
+  min-width: 40px; 
+  height: 28px; 
+  line-height: 28px; 
+}
+$uicss .met_pager a.Ahover { 
+  
+  border-color: $thirdcolor$;
+  background: $thirdcolor$;
+  color: $btn_font_color$; 
+  cursor: default; 
+}
+$uicss .met_pager a.Ahover:hover { 
+  border-color: $thirdcolor$;
+  background: $thirdcolor$; 
+  color: $btn_font_hover_color$; 
+}
+$uicss .met_pager a { 
+  text-decoration: none; 
+}
+$uicss .met_pager a:active,
+$uicss .met_pager a:focus,
+$uicss .met_pager a:hover { 
+  text-decoration: none; 
+}
+$uicss .met_pager .PageText { 
+  display: none;
+  margin-left: 10px; 
+  color: #aaa; 
+}
+$uicss .met_pager input { 
+  display: none; 
+}
+$uicss .met_pager .firstPage,
+$uicss .met_pager .lastPage { 
+  height: auto; 
+  line-height: inherit; 
+}
+$uicss .pager li { 
+  width: 49%; 
+  display: inline-block; 
+}
+$uicss .pager li a { 
+  max-width: 100%; 
+}
+$uicss #met-pager-btn{
+  border-color: $thirdcolor$;
+  background-color: $thirdcolor$;
+  border-color: $hovercolor$;
+  background-color: $hovercolor$;
+}
+
+
+$uicss dl,$uicss ol,$uicss ul {
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+}
+

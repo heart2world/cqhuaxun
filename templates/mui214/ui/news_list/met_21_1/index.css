@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* 首页关于我们 */
+$uicss.met-index-body.bgcolor{background:$bodybgcolor$;background:$bgcolor$;}
+$uicss.met-index-body.bgpic{background:url($bgpic$) no-repeat;background-size: cover;background-position: center;}
+$uicss.met-index-body{padding:$padding$px 0px;}
+$uicss.met-index-body h2{font-size:22px;color:$firstcolor$;color:$titlecolor$;}
+$uicss.met-index-body p.desc{padding:0 10%;font-size:16px;color:$secondcolor$;color:$desccolor$;}
+$uicss .met-editor{margin-top:50px;}
+@media (max-width:991px){
+   $uicss.met-index-body {padding:$padding_p$px 0px;}
+    $uicss .met-editor{margin-top:40px;}
+}
+@media (max-width:767px){
+   $uicss.met-index-body {padding:$padding_m$px 0px;}
+    $uicss .met-editor{margin-top:30px;}
+}
+
+/*新闻列表*/
+$uicss h2 {
+  height: 40px;
+  max-width: 90%;
+  line-height: 40px;
+  overflow: hidden;
+  margin-top:0px;
+  text-align: left;
+  font-size: 22px!important;
+  color: #041366;
+  margin-top: 0px;
+  font-weight: normal;
+}
+$uicss h2 span {
+  font-size: 13px;
+  color:$secondcolor$;
+  color:$desccolor$;
+}
+$uicss .newslist .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background:$firstcolor$;
+    background:$rightcolor$;
+}
+$uicss .newslist .mCSB_scrollTools .mCSB_draggerRail{
+    border-right: 1px dashed ;
+    border-color:$firstcolor$;
+    border-color:$rightcolor$;
+}
+$uicss ul.newslist {
+  height: 344px;
+  overflow: auto;
+  list-style: none;
+}
+$uicss ul.newslist li {
+  margin-bottom: 7px;
+}
+$uicss ul.newslist li a {
+  color:$firstcolor$;
+  color:$righttitlecolor$;
+  font-size: 16px;
+}
+$uicss ul.newslist li a:hover{
+  color:$thirdcolor$;
+  color:$righttitlehovercolor$;
+  font-size: 16px;
+}
+$uicss ul.newslist li p {
+  color:$secondcolor$;
+  color: $rightdesccolor$;
+  margin-bottom: 0px;
+
+ overflow: hidden;
+}
+$uicss ul.newslist li p.des {
+  margin-bottom: 5px;
+}
+@media (max-width: 991px) {
+  $uicss ul.newslist li .media-left {
+    padding-right: 10px;
+  }
+  $uicss ul.newslist li .media-left .media-object {
+    width: 100px;
+  }
+  $uicss ul.newslist li p.des {
+    max-height: 4.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+@media (max-width: 767px) {
+  $uicss ul.newslist li {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  $uicss ul.newslist li h4 {
+    font-size: 16px;
+  }
+  .news_list_met_21_1 a.more{
+    margin-bottom: 5px;
+  }
+}
+$uicss a.more {
+  height: 34px;
+  line-height: 34px;
+  border: solid 1px ;
+  border-color:#f3f3f3;
+  border-color:$moreborcolor$;
+  font-size: 14px;
+  padding: 0 20px;
+  color:$firstcolor$;
+  color:$moretxtcolor$;
+  text-decoration: none;
+}
+$uicss a.more:active,
+$uicss a.more:focus,
+$uicss a.more:hover {
+  text-decoration: none;
+}
+@media (max-width: 320px) {
+  $uicss a.more {
+    padding: 0 3px;
+    font-size: 12px;
+  }
+}
+$uicss a.more:hover {
+  background:$thirdcolor$;
+  background:$morebgcolor$;
+  color: #fff;
+}
+$uicss #newsad img {
+  max-width: 100%;
+  height: 344px;
+}
+@media (max-width: 768px) {
+  $uicss #newsad img {
+    max-width: 100%;
+    /*height: auto;*/
+  }
+  $uicss.met-index-body h2{
+    height: auto;
+  }
+}
+$uicss #newsad .slick-dots {
+  bottom: 10px;
+  width: auto;
+  right: 20px;
+  height: 20px;
+  line-height: 15px;
+}
+$uicss #newsad .slick-dots li {
+  margin: 0;
+}
+$uicss #newsad .slick-dots li.slick-active button:before {
+  color:$firstcolor$;
+  color:$imgtitlecolor$;
+}
+$uicss #newsad .slick-dots li button:before {
+  color: #fff;
+  opacity: 1;
+}
+$uicss .slick-slide {
+  position: relative;
+}
+$uicss .news_name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+}
+$uicss .news_name a {
+  text-decoration: none;
+  color:$firstcolor$;
+  color: $imgtitlecolor$;
+  display: block;
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+}
+$uicss .news_name a:active,
+$uicss .news_name a:focus,
+$uicss .news_name a:hover{
+  text-decoration: none;
+}
+.met-index-allnews .tab-list{
+  padding-left: 0;
+  list-style: none;
+}
+.met-index-allnews .tab-list li{
+  background: #041366;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}

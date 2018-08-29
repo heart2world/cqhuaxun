@@ -1,0 +1,180 @@
+$uicss.met-index-body{background-color: $bodybgcolor$;background-color: $bgcolor$;}
+$uicss.met-index-body{background-image: url($bgpic$);background-size: cover;background-repeat: no-repeat;background-position: center; }
+$uicss .hd-title {
+  height: 112px;
+  padding: 0 15px;
+  position: relative;
+}
+$uicss .hd-title-icon {
+  float: left;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  transform:translate(0,-50%);
+-ms-transform:translate(0,-50%);   /* IE 9 */
+-moz-transform:translate(0,-50%);  /* Firefox */
+-webkit-transform:translate(0,-50%); /* Safari 和 Chrome */
+-o-transform:translate(0,-50%); 
+}
+$uicss .hd-title-h2 {
+  float: left;
+  margin: 0 20px 0 60px;
+  line-height: 112px;
+  color: $firstcolor$;color: $ctitlecolor$;
+  font-size: 30px;
+  max-width: 180px;
+  overflow: hidden;
+  height: 100%;
+}
+$uicss .hd-title-line {
+  float: left;
+  margin-top: 56px;
+  width: 75%;
+  height: 0;
+  border-top: 1px solid $linecolor$;
+}
+
+$uicss .hd-title-more {
+  float: right;
+  margin-top: 47px;
+  color: $secondcolor$;color: $morecolor$;opacity: 0.9;
+}
+$uicss .hd-title-more:hover {
+  opacity: 1;
+}
+$uicss .hd-title-more i {
+  font-size: 14px;
+  float: right;
+  margin: 5px 0 0 5px;
+}
+$uicss .hd-new-category {
+  position: relative;
+  top: -15px;
+  margin-left: 20px;
+}
+$uicss .hd-new-category a {
+  float: left;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #87959F;
+}
+$uicss .hd-new-con {
+  margin-bottom: 50px;
+}
+$uicss .newsList li {
+  padding-bottom: 20px;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration-skip: objects;
+}
+$uicss .newsList li:hover {
+  background-color: $lhoverbgcolor$;
+}
+
+
+$uicss .newsList li h3 {
+  font-size: 20px;
+  margin: 0;word-break: break-all;
+}
+$uicss .newsList li h3 a{color: $firstcolor$;color: $titlecolor$;}
+$uicss .newsList li h3 a:hover {
+  color: $thirdcolor$;color: $hovercolor$;
+}
+$uicss .newsList li p {
+  margin: 8px 0 24px;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  color: $secondcolor$;color: $desccolor$;
+  text-align: justify;
+  overflow: hidden;
+}
+$uicss .newsList li span {
+  font-size: 12px;
+  color: $secondcolor$;color: $ucolor$;
+}
+$uicss .newsList li .newsList-des-noteTags {
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  background-color: $thirdcolor$;background-color: $tagbgcolor$;
+  font-size: 12px;
+  border-radius: 2px;
+}
+$uicss .newsList li .newsList-des-noteTags a {
+  color: $tagcolor$;
+}
+$uicss .newsList li .newsList-des-noteDate {
+  margin: 0 20px 0 10px;
+}
+
+$uicss .hd-newsList02 .newsList02-icon {
+  position: absolute;
+  top: -2px;
+  left: -20px;
+  font-size: 22px;
+  color: $thirdcolor$;color:$riconcolor$;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration-skip: objects;
+}
+$uicss .hd-newsList02 li {
+  position: relative;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration-skip: objects;
+}
+$uicss .hd-newsList02 li:hover {
+  margin-left: 10px;
+}
+$uicss .hd-newsList02 li + li {
+  margin-top: 33px;
+}
+$uicss .hd-newsList02 h3 {
+  height: 36px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  margin-top: 0px;
+}
+$uicss .hd-newsList02 h3 a {
+  color: $firstcolor$;color: $titlecolor$;
+}
+$uicss .hd-newsList02 h3 a:hover {
+  color: $thirdcolor$;color: $hovercolor$;
+}
+$uicss .hd-newsList02 span {
+  font-size: 12px;
+  color: $secondcolor$;color: $ucolor$;
+}
+$uicss .hd-newsList02 span + span {
+  margin-left: 20px;
+}
+@media (max-width: 1200px){
+  $uicss .hd-title-line{width: 65%;}
+}
+@media (max-width: 992px){
+  $uicss .hd-title-line{display: none;}
+  $uicss li .media-left .media-object {
+      width: 100px;
+  }
+}
+@media (max-width: 479px){
+  $uicss .newsList li{padding:10px 0;}
+  $uicss li .media-left {
+      display: table-cell;padding-right: 10px;
+  }
+  $uicss .newsList li h3{font-size: 16px;}
+  $uicss .newsList li p{margin-bottom: 5px; font-size: 12px;height: 38px;}
+  $uicss .newsList li .newsList-des-noteDate{margin: 0 5px;}
+  $uicss .hd-newsList02 h3{height: 32px;margin-bottom: 0;}
+  $uicss .hd-newsList02 li + li{margin-top: 20px;}
+}

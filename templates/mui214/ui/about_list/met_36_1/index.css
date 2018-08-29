@@ -1,0 +1,160 @@
+$uicss.met-index-body{
+      padding:$full_padding$px 0px;
+      background-color:$bodybgcolor$;
+      background-color:$bg_full_color$;
+      background-image:url('$bg_img$');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+/*平板*/
+@media (max-width: 991px){
+    $uicss.met-index-body{padding: $padding_p$px 0px}
+}
+/*手机*/
+@media (max-width: 768px){
+    $uicss.met-index-body{padding: $padding_m$px 0px}
+}
+
+$uicss .about-grids{
+	margin:3em 0 0;
+}
+$uicss .panel-link span {
+    display: none;
+}
+$uicss .panel-link i,.collapsed span {
+    left: 20em;
+    font-size: 0.7em;
+    color: #212121;
+}
+$uicss .collapsed i {
+    display: none;
+}
+$uicss .collapsed span {
+    display: inline-block;
+}
+$uicss .panel_text {
+    font-size: $text_subtitle_size$px;
+    font-weight: $text_subtitle_weight$;
+    color: $secondcolor$;
+    color: $text_subtitle_color$;
+    line-height: 1.8em;
+}
+
+$uicss .about-grids-left h4 {
+    font-size: $text_title_size$em;
+    font-weight: $text_title_weight$;
+    color: $firstcolor$;
+    color: $text_title_color$;
+    margin: 0;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+$uicss .about-grids-left a h4{
+	text-decoration:none;
+}
+$uicss .about-grids-left a h4:hover{
+    color: $thirdcolor$;
+	color:$text_title_hover_color$;
+}
+$uicss .panel-header-sub {
+    padding:1em 0;
+}
+$uicss .panel-default > .panel-header {
+    background: none;
+    border: none;
+	border-bottom:1px solid $content_line_color$;
+}
+$uicss .panel-default {
+    border: none;
+}
+$uicss .panel-group .panel + .panel {
+    margin-top: 0;
+}
+$uicss .panel-group .panel {
+    border-radius: 0;
+}
+$uicss .panel {
+    box-shadow: none;
+}
+$uicss .panel-group .panel-header + .panel-collapse > .panel-body,$uicss .panel-group .panel-header + .panel-collapse > .list-group {
+    border: none;
+    max-width: 100%;    
+}
+
+$uicss .container h3.animated{
+    visibility: visible;
+    animation-delay: 0.5s;
+    animation-name: zoomIn;
+}
+
+$uicss .container h3:hover{
+    color: $thirdcolor$;
+    color: $focuscolor$;
+}
+
+$uicss .services h3, $uicss .testimonials h3, $uicss h3, $uicss .team h3,$uicss .pricing-plans h3, $uicss h3.title, $uicss .gallery h3, $uicss .mail h3 {
+    font-size: $title_size$em;
+    font-weight: $title_weight$;
+    color: $firstcolor$;
+    color: $title_color$;
+    text-align: center;
+    position: relative;
+    padding-bottom: .5em;
+    letter-spacing: 3px;
+}
+
+$uicss .container p.qui{
+    visibility: visible;
+    animation-delay: 0.5s;
+    animation-name: zoomIn;
+    text-align: center;
+    color: $secondcolor$;
+    color: $subtitle_color$;
+    line-height: 1.8em;
+    margin: 1em 0 0 !important;
+    font-weight: $subtitle_weight$ !important;
+    font-size: $subtitle_size$px;
+}
+
+$uicss .thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+/*.glyphicon-menu-down:before{content:'\e259'}.glyphicon-menu-up:before{content:'\e260'}*/
+
+$uicss .panel-body img{
+    max-width: 100%;
+}
+
+$uicss .services h3:before,$uicss .testimonials h3:before, $uicss h3:before, $uicss .gallery h3:before, $uicss .mail h3:before, $uicss .team h3:before, $uicss .pricing-plans h3:before, $uicss h3.title:before {
+    content: '';
+    background: $title_line_color$;
+    width: 10%;
+    height: 3px;
+    position: absolute;
+    bottom: -2%;
+    right: 44.9%;
+}
+
+$uicss .services h3:after, $uicss .testimonials h3:after, $uicss h3:after, $uicss .gallery h3:after, $uicss .mail h3:after, $uicss .team h3:after, $uicss .pricing-plans h3:after, $uicss h3.title:after {
+    content: '';
+    background: $title_line_long_color$;
+    width: 30%;
+    height: 1px;
+    position: absolute;
+    bottom: 0%;
+    left: 35%;
+}
+
+
+
+
+$uicss .panel-group .panel-title.add:before,
+$uicss .panel-group .panel-title.add:after{
+    content: "";
+}

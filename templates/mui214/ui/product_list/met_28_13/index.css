@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* 侧栏 */
+$uicss .panel-body{padding: 0px !important;margin-left: 0;}
+@media (max-width:991px){
+	$uicss .panel-body{margin-left:10px;margin-top:0px;}
+}
+@media (max-width:767px){
+    $uicss .panel-body{padding:20px 0;}
+	$uicss .panel-body{margin-top:15px;margin-left:0;margin-top: 0;}
+}
+$uicss .leftsidebar{margin-left:0!important;margin-right:30px;}
+@media (max-width:991px){
+	$uicss .leftsidebar{margin-right:0px;}
+}
+$uicss .sidebar-column{margin: 0;padding-left: 0;}
+$uicss .sidebar-column>li{white-space: nowrap; background: $bgcolumn$; margin: 0 !important;}
+$uicss .sidebar-column>li>a{display:block;font-size:16px;    width: 100%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; text-decoration: none; display: block; padding: 10px 10px 10px 20px; font-size: 15px; font-weight: 300;  position: relative;color:$firstcolor$;color:$ctextcolor$;}
+$uicss .sidebar-column ul{list-style: none;padding:0;}
+$uicss .sidebar-column ul>li{   padding: 10px 10px 10px 30px;}
+$uicss .sidebar-column ul>li{
+    border-top:1px solid rgba(0, 0, 0,.1);
+    border-left: 1px solid rgb(0,0,0,.1);
+    border-right: 1px solid rgb(0,0,0,.1);
+}
+$uicss .sidebar-column li i{float:right;margin-top:2px;font-size:14px;color:$bor_color$;}
+$uicss .sidebar-column li ul a{
+    font-size:14px;
+    color:$firstcolor$;
+    color:$ctextcolor$;
+}
+$uicss .sidebar-column li ul a i{
+    font-size:14px;
+    color:$firstcolor$;
+    color:$ctextcolor$;
+}
+$uicss .sidebar-column li a:hover,$uicss .sidebar-column li a.active{color:$thirdcolor$;color:$hover_color$;}
+$uicss .sidebar-news-list li a:hover{color: $thirdcolor$;color:$hover_color$;}
+$uicss .form-control.focus,$uicss .form-control:focus{border-color: $thirdcolor$;color:$hover_color$;}
+
+$uicss h2.sidebar-tile  {font-weight: normal; font-size: 18px; margin: 0;  text-shadow:none; }
+$uicss h2.sidebar-tile span,$uicss h2.sidebar-tile a{color:$firstcolor$;color:$bottom_title_color$;position:relative;}
+/*$uicss h2.sidebar-tile span:before,$uicss h2.sidebar-tile a:before{content: ''; display: block; position: absolute; bottom: -7px; left: 0; height: 2px; width: 100%; background: $firstcolor$;background: $hover_color$;}*/
+$uicss .input-search .form-control{border-radius: 0;}
+$uicss .input-search-btn{border-radius: 0;background: $thirdcolor$;background: $hover_color$;color:#fff;cursor: pointer;}
+$uicss .clearfix img{max-width:84%;height:auto;}
+$uicss .sidebar-column li>a.bars{
+    background: -ms-linear-gradient(top, $linearTop$ 0%,$linearCenter$ 72%,$linearBottom$ 100%);
+    background: -webkit-linear-gradient(top, $linearTop$ 0%,$linearCenter$ 72%,$linearBottom$ 100%);
+    background: linear-gradient(top, $linearTop$ 0%,$linearCenter$ 72%,$linearBottom$ 100%);;
+    color:$bor_color$;
+}
+$uicss .sidebar-column li>a.bars:hover{
+    color:$thirdcolor$;
+    color:$hover_color$;
+}
+$uicss .sidebar-tile.head-bg{
+    padding: 12px 10px 12px 20px;
+}
+$uicss .sidebar-tile.head-bg.bgcolor{
+    background-color:$thirdcolor$;
+    background-color:$title_bg_color$;
+    
+}
+
+$uicss h2.sidebar-tile em{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color:$firstcolor$;color:$ccolor$;
+}
+$uicss h2.sidebar-tile span.desc{
+    font-size: 14px;
+    color:$secondcolor$;
+    color:$desccolor$;
+}
+$uicss .clearfix{
+    text-align: center;
+    width: 100%;
+    padding-top: 32px;
+}
+$uicss .clearfix.bgimg{
+    background: url('$bgimg$') no-repeat center bottom;
+    background-size: cover;
+}
+$uicss .clearfix.bt_bgcolor{
+    background: $bt_bgcolor$;
+}
+$uicss .clearfix .tel1{
+    padding:0 0 38px;
+}
+$uicss .clearfix .tel1 p{
+    margin:8px 0 0 0;
+    line-height: 20px;
+    font-size: 16px;
+    color:$firstcolor$;
+    color:$ccolor$;
+}
+$uicss .clearfix .tel1 b{
+    font-size: 24px;
+    color:$secondcolor$;
+    color:$desccolor$;
+}
+$uicss .mainbox{
+    overflow: hidden;
+}
+$uicss .right .ihead{
+    position: relative;
+    border-bottom: 3px solid;
+    border-color: $firstcolor$;
+    border-color: $listtitlecolor$;
+    height: 50px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+$uicss .right .ihead h2{
+    font-size: 25px;
+    color: $firstcolor$;
+    color: $listtitlecolor$;
+    font-weight: bold;
+    margin:0;
+}
+$uicss .right .ihead a.mo{
+    position: absolute;
+    right: 0;
+    top: 6px;
+    font-size: 14px;
+    color: $secondcolor$;
+    color: $listmorecolor$;
+    display: block;
+}
+$uicss {
+    padding:60px 0;
+    background: $bodybgcolor$;
+    background: $bgcolor$;
+}
+$uicss .right .twoboxelse .card{
+    background: none;
+}
+$uicss .right .twoboxelse .card .cover{
+    background: none;
+    border: 2px solid $solidcolor$;
+    border-radius: 8px !important;
+    transition:all 0.6s;
+}
+$uicss .right .twoboxelse .card:hover .cover{
+    border-color: $thirdcolor$;
+    border-color: $hover_color$;
+}
+$uicss .right .twoboxelse .card .cover a img{
+    transition: all 0.6s;
+}
+$uicss .right .twoboxelse .card:hover .cover a img{
+    transform: scale(1.4);
+}
+$uicss .right .twoboxelse .card > .card-title a{
+    font-size: 19px;
+    color:$firstcolor$;
+    color:$listtitlecolor$;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition:all .6s;
+}
+$uicss .right .twoboxelse .card:hover > .card-title a{
+    color:$thirdcolor$;
+    color:$hover_color$;
+}
+@media (min-width:767px){
+    $uicss .right.col-md-8{
+        padding-left: 2.9375rem;
+    }
+}

@@ -1,0 +1,58 @@
+$uicss { background: $bgcolor$; }
+$uicss  .title-box { padding: 50px 0 27px; border-bottom: 1px solid; border-color: $secondcolor$; border-color: $solidcolor$; }
+$uicss .head h2 { font-size: 30px; font-weight: normal; color: $firstcolor$; color: $titlecolor$; line-height: 28px }
+$uicss .head p { font-size: 14px; line-height: 28px; margin: 15px 0 0; color: $secondcolor$; color: $descolor$; }
+$uicss .foot-box { margin-top: 30px }
+$uicss .foot-box .foot-img { text-align: right }
+$uicss .foot-box .foot-img img { max-width: 100%; -o-object-fit: scale-down; object-fit: scale-down }
+$uicss .foot-box .foot-tel { text-align: right }
+$uicss .foot-box .foot-tel span { font-size: 12px; margin: 15px 0 10px; display: block; text-align: right; color: $secondcolor$; color: $desccolor$; }
+$uicss .foot-box .foot-tel a { font-size: 44px; color: $secondcolor$; color: $desccolor$; font-weight: 700; height: 35px; display: block; line-height: 35px }
+$uicss .foot-box .foot-tel p { font-size: 12px; color: $secondcolor$; color: $desccolor$; line-height: 32px }
+$uicss .foot-box .foot-tel .more-info { font-size: 14px; color: $secondcolor$; color: $desccolor$; font-weight: bold; line-height: 20px; text-align: right; margin: 10px 3px }
+$uicss .met-foot-feedback .form-group { width: 50%; float: left; text-align: left }
+$uicss .met-foot-feedback label { color: $secondcolor$; color: $desccolor$; }
+$uicss .met-foot-feedback .w100 { width: 100% }
+$uicss .met-foot-feedback .btn { font-size: 14px; background: $thirdcolor$; background: $btncolor$; color: $secondcolor$; color: $desccolor$; border: 1px solid; border-color: $thirdcolor$; border-color: $btncolor$; outline: none; border-radius: 0; height: 36px; line-height: 34px; padding: 0 15px }
+$uicss .met-foot-feedback .btn:hover, $uicss .met-foot-feedback .btn:focus, $uicss .met-foot-feedback .btn:active { color: $desccolor$; color: $hovercolor$; border-color: $thirdcolor$; border-color: $hover_bgcolor$; background-color: $thirdcolor$; background-color: $hover_bgcolor$; outline: 0 !important; }
+$uicss .met-foot-feedback .control-label { color: $secondcolor$; color: $desccolor$; }
+$uicss .met-foot-feedback input { color: $secondcolor$; color: $desccolor$; border: 1px solid; border-color: $thirdcolor$; border-color: $btncolor$; background: $thirdcolor$; background: $btncolor$; }
+$uicss .met-foot-feedback input:focus, $uicss .met-foot-feedback textarea:focus { outline: 0 !important; }
+$uicss .met-foot-feedback textarea { color: $secondcolor$; color: $desccolor$; border: 1px solid; border-color: $thirdcolor$; border-color: $btncolor$; background: $thirdcolor$; background: $btncolor$; }
+$uicss .met-foot-feedback img { height: 23px; }
+$uicss .met-foot-feedback .bootstrap-select.btn-group .dropdown-menu { background: transparent; border: 0 }
+$uicss .met-foot-feedback .pull-left { float: left !important; }
+$uicss .met-foot-feedback .radio-primary input[type=radio]:checked+label::before { border-color: $secondcolor$; border-color: $desccolor$; }
+$uicss .met-foot-feedback .checkbox-primary input[type=radio]:checked+label::before, .checkbox-primary input[type=checkbox]:checked+label::before { border-color: $secondcolor$; border-color: $desccolor$;background: $secondcolor$; background: $desccolor$; }
+$uicss .met-foot-feedback .bootstrap-select.btn-group .dropdown-menu ul { padding: 0 }
+$uicss .met-foot-feedback .dropdown-toggle::after { margin-left: -0.7em; }
+$uicss .met-foot-feedback .bootstrap-select.btn-group .dropdown-menu li { background: $thirdcolor$; background: $btncolor$; margin: 0 }
+$uicss .met-foot-feedback .bootstrap-select.btn-group .dropdown-menu li a { color: $secondcolor$ !important; color: $desccolor$ !important; padding: 8px 15px; display: block; padding: 3px 20px; clear: both; font-weight: 400; line-height: 1.57142857; white-space: nowrap; }
+$uicss .met-foot-feedback .bootstrap-select.btn-group .dropdown-menu li a:hover, $uicss .met-foot-feedback .bootstrap-select.btn-group .dropdown-menu li a:focus { color: $desccolor$ !important; color: $hovercolor$ !important; border-color: $thirdcolor$ !important; border-color: $hover_bgcolor$ !important; background-color: $thirdcolor$ !important; background-color: $hover_bgcolor$ !important; }
+$uicss .met-foot-feedback .input-group { padding-right: 15px }
+$uicss .breadcrumb-item+.breadcrumb-item::before{
+	   color: $secondcolor$; color: $solidcolor$;
+}
+$uicss .links { border-top: 1px solid; border-color: $secondcolor$; border-color: $solidcolor$; color: $secondcolor$; color: $desccolor$; padding: 8px 0; }
+$uicss .links a { color: $secondcolor$; color: $desccolor$; }
+$uicss .met-foot-feedback input:-moz-placeholder {	/* Mozilla Firefox 4 to 18 */
+color: $secondcolor$ !important; color: $desccolor$ !important; }
+$uicss .met-foot-feedback input::-moz-placeholder {	/* Mozilla Firefox 19+ */
+color: $secondcolor$ !important; color: $desccolor$ !important; }
+$uicss .met-foot-feedback input:-ms-input-placeholder { color: $secondcolor$ !important; color: $desccolor$ !important; }
+$uicss .met-foot-feedback input::-webkit-input-placeholder { color: $secondcolor$ !important; color: $desccolor$ !important; }
+$uicss .met-foot-feedback textarea:-moz-placeholder {	/* Mozilla Firefox 4 to 18 */
+color: $secondcolor$ !important; color: $desccolor$ !important; }
+$uicss .met-foot-feedback textarea::-moz-placeholder {	/* Mozilla Firefox 19+ */
+color: $secondcolor$ !important; color: $desccolor$ !important; }
+$uicss .met-foot-feedback textarea:-ms-input-placeholder { color: $secondcolor$ !important; color: $desccolor$ !important; }
+$uicss .met-foot-feedback textarea::-webkit-input-placeholder { color: $secondcolor$ !important; color: $desccolor$ !important; }
+@media (max-width:991px) {
+	$uicss .met-foot-feedback .form-group { width: 100%; }
+	$uicss .foot-box .foot-img img { margin-top: 20px; }
+	$uicss .met-foot-feedback .form-group.p-r-15 { padding: 0 !important; }
+}
+@media (max-width:1024px) {
+	$uicss .foot-box .foot-tel a{font-size: 29px;}
+}
+$uicss .form-group .selectpicker{color: $secondcolor$; color: $desccolor$;border: 1px solid; border-color: $thirdcolor$; border-color: $btncolor$;background: $thirdcolor$; background: $btncolor$;}
